@@ -150,10 +150,10 @@ object ListTest extends App {
   println(listOfString.fold("V")((a,b) => a+b))
   println(list.fold(5)(_+_))
 
-  for {
+  val combinations = for {
     n <- list
     s <- listOfString
-  } print((n+"-"+s) + " ")
-  println("")
+  } yield n+"-"+s
+  println(combinations)
   println(list.flatMap(n=> listOfString.map(s=> n+"-"+s)).toString)
 }
