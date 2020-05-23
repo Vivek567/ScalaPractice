@@ -1,0 +1,5 @@
+package Advanced
+
+object AdvFunProg {
+
+}
