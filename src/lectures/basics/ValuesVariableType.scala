@@ -53,6 +53,7 @@ object ValuesVariableType extends App {
   // 5. Assignment operators = , +=, -+, *=, /=, %=, >>= <<= >>>=
   // 6. Bitwise operators ! $ | >> << >>> ~
 
+  println("Right shift")
   println(16 >> 2) // Right shift
   println(32 >> 2) //(shift right by 2 places)( 32 bit integer) 000000000000-1-0-0-0-0-0 => 2^5  here. 2^5>>2   => 0-0-1-0-0-0=> 2^3 =8
   println(16 >>> 2)
